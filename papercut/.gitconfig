@@ -1,0 +1,20 @@
+[user]
+	name = Phil Brown
+	email = philip.brown@papercut.com
+[core]
+	excludesfile = ~/.gitignore_global
+	autocrlf = input
+[push]
+	default = simple
+[alias]
+	st = status
+	co = checkout
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  ro = "!f() { git fetch origin && git rebase origin/${1:-develop}; }; f"
+  pushnew = push -u origin HEAD
+  cb = "!f() { CURRENT=$(git rev-parse --abbrev-ref HEAD) && git checkout ${1:-develop} && git pull && git branch -d $CURRENT; }; f"
+  con = "!f() { git fetch origin && git co -b $1 --no-track origin/${2:-develop}; }; f"
+[branch]
+	autoSetupRebase = always
+[fetch]
+	prune = true

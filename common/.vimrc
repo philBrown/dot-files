@@ -1,16 +1,15 @@
+set ts=4
+set sw=4
 set expandtab
-set tabstop=4
-set shiftwidth=4
-set bg=dark
 set autoindent
+set smartindent
 set nocompatible
-set syntax=on
 set incsearch
 set ignorecase
 set smartcase
 set backspace=eol,start,indent
-execute pathogen#infect()
+set ruler
 syntax on
 filetype plugin indent on
-let g:solarized_termtrans=1
+set background=dark
 colorscheme solarized

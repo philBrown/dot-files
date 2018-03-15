@@ -1,3 +1,6 @@
-[submodule "common/.vim/bundle/vim-colors-solarized"]
-	path = common/.vim/bundle/vim-colors-solarized
+[submodule "common/.vim/pack/plugins/start/vim-gitgutter"]
+	path = common/.vim/pack/plugins/start/vim-gitgutter
+	url = git@github.com:airblade/vim-gitgutter.git
+[submodule "common/.vim/pack/colorschemes/start/vim-colors-solarized"]
+	path = common/.vim/pack/colorschemes/start/vim-colors-solarized
 	url = git@github.com:altercation/vim-colors-solarized.git
