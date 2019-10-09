@@ -18,3 +18,9 @@
 	autoSetupRebase = always
 [fetch]
 	prune = true
+[pull]
+	rebase = true
+[url "bitbucket.org:"]
+	insteadof = https://bitbucket.org/
+[diff]
+	noprefix = true

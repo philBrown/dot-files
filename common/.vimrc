@@ -1,5 +1,5 @@
-set ts=4
-set sw=4
+set ts=2
+set sw=2
 set expandtab
 set autoindent
 set smartindent
@@ -9,7 +9,8 @@ set ignorecase
 set smartcase
 set backspace=eol,start,indent
 set ruler
-syntax on
+syntax enable
 filetype plugin indent on
-set background=dark
-colorscheme solarized
+"set background=dark
+colorscheme monokai
+set comments +=fb:-
