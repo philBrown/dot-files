@@ -20,7 +20,7 @@
 	prune = true
 [pull]
 	rebase = true
-[url "bitbucket.org:"]
+[url "git@bitbucket.org:"]
 	insteadof = https://bitbucket.org/
 [diff]
 	noprefix = true
