@@ -1,0 +1,20 @@
+[user]
+	name = Phil Brown
+	email = gnoodl@gmail.com
+[alias]
+	co = checkout
+	st = status
+	pushnew = push -u origin HEAD
+	con = "!f() { git fetch origin && git co -b $1 --no-track origin/${2:-master}; }; f"
+	cb = "!f() { CURRENT=$(git rev-parse --abbrev-ref HEAD) && git checkout ${1:-master} && git pull && git branch -D $CURRENT; }; f"
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	resync = "!f() { git fetch origin ${1:-master}:${1:-master}; }; f"
+[push]
+	default = simple
+[branch]
+	autoSetupRebase = always
+[fetch]
+	prune = true
+[core]
+	excludesfile = /Users/phil/.gitignore_global
+	autocrlf = input
